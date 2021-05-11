@@ -54,7 +54,6 @@ def addtowatchlist(request):
   user.save()
   return JsonResponse({'message': "OK"})
 
-
 @csrf_exempt
 def getwatchlistinfo(request):
   data = json.loads(request.body)
