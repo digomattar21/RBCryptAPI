@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-_qk1s2aq7*4ou^7*@-1m&(w1hl13^--#90-8um(*#hu88hg%eb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rbcrypto.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rb-crypto.web.app']
 
 
 # Application definition
