@@ -11,10 +11,15 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-MONGO_USER='digoadm'
-MONGO_PASS='eunaoseiencodarurlsporrafilhadaputa2021'
-MONGO_HOST='cluster0.iutfv.mongodb.net'
-MONGO_NAME='rbcrypto'
+import environ 
+
+env = environ.Env()
+environ.Env.read_env()
+
+MONGO_USER=env("MONGO_USER")
+MONGO_PASS=env("MONGO_PASS")
+MONGO_HOST=env("MONGO_HOST")
+MONGO_NAME=env("MONGO_NAME")
 MONGO_DATABASE_HOST = \
 'mongodb+srv://%s:%s@%s/%s' \
 % (MONGO_USER, MONGO_PASS, MONGO_HOST, MONGO_NAME)
@@ -29,9 +34,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_qk1s2aq7*4ou^7*@-1m&(w1hl13^--#90-8um(*#hu88hg%eb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rbcrypto.herokuapp.com']
 
 
 # Application definition
