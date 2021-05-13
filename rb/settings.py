@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rbcrypto.herokuapp.com','rb-crypto.web.app']
 
-
 # Application definition
 
 INSTALLED_APPS = [

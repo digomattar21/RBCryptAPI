@@ -62,3 +62,16 @@ def getwatchlistinfo(request):
 
   return JsonResponse({"tickers": user.watchlist})
   
+
+@csrf_exempt
+def removetickerfromwatchlist(request):
+  data = json.loads(request.body)
+  email = data['email']
+  tickerSymbol = data['tickerSymbol']
+
+  user = User.objects.get(email=email)
+  if {"symbol":tickerSymbol} in user.watchlist:
+    user.watchlist.remove({"symbol":tickerSymbol})
+
+  user.save()
+  return JsonResponse({"message":"OK"})

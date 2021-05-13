@@ -7,5 +7,6 @@ urlpatterns = [
     path('private/user/signupwithemail', views.signupwithemail, name='signupwithemail'),
     path('private/user/signupwithgoogle', views.signupwithgoogle, name='signupwithgoogle'),
     path('private/user/addtowatchlist', views.addtowatchlist, name='addtowatchlist'),
-    path('private/user/getwatchlistinfo', views.getwatchlistinfo, name='getwatchlistinfo')
+    path('private/user/getwatchlistinfo', views.getwatchlistinfo, name='getwatchlistinfo'),
+    path('private/user/removetickerfromwatchlist', views.removetickerfromwatchlist, name='removetickerfromwatchlist'),
 ]
