@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_qk1s2aq7*4ou^7*@-1m&(w1hl13^--#90-8um(*#hu88hg%eb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rbcrypto.herokuapp.com', 'rb-crypto.web.app', 'https://rbcrypto.web.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rbcrypto.herokuapp.com','rb-crypto.web.app']
 
 
 # Application definition
@@ -107,15 +107,15 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 #CORS
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 CSRF_COOKIE_SECURE = False
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8000',
-    'http://localhost:3000',
-    'http://localhost',
-    'https://rb-crypto.web.app/', 
-    'https://rb-crypto.web.app'
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'http://localhost:8000',
+#     'http://localhost:3000',
+#     'http://localhost',
+#     'https://rb-crypto.web.app/', 
+#     'https://rb-crypto.web.app'
+# )
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
