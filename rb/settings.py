@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_qk1s2aq7*4ou^7*@-1m&(w1hl13^--#90-8um(*#hu88hg%eb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rbcrypto.herokuapp.com','rb-crypto.web.app']
 
@@ -116,6 +116,8 @@ CSRF_COOKIE_SECURE = False
 #     'https://rb-crypto.web.app/', 
 #     'https://rb-crypto.web.app'
 # )
+
+CORS_ORIGIN_WHITELIST=('*')
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
