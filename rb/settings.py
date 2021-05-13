@@ -117,7 +117,7 @@ CSRF_COOKIE_SECURE = False
 #     'https://rb-crypto.web.app'
 # )
 
-CORS_ORIGIN_WHITELIST=('*')
+# CORS_ORIGIN_WHITELIST=('*')
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
